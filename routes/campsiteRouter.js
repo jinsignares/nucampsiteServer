@@ -1,10 +1,6 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const Campsite = require('../models/campsite');
-
 const campsiteRouter = express.Router();
-
-campsiteRouter.use(bodyParser.json());
 
 campsiteRouter.route('/')
 .get((req, res, next) => {
